@@ -1,11 +1,14 @@
 # Proyecto PLN - Estimación del salario en función de la oferta
 
 **Grupo 3**  
+
 **Componentes**: Sebastia Garcia, Sergio (Lider) / Dionis Ros, Alejandro / Lizzadro Pla, Adrian / Zhigarev, Ilia
+
 **Fuente de datos**: Web Scraping ([GetManfred.com](https://www.getmanfred.com/))  
+
 **Tema**: Ofertas de Trabajo  
+
 **Objetivo principal**: Estimación del salario en función de la oferta  
-**Objetivo adicional (opcional)**: Topic modeling
 
 ---
 
