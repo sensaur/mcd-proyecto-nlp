@@ -1,0 +1,9 @@
+*.log
+.env
+.env/
+.idea/
+.ipynb_checkpoints/
+.venv/
+.vscode/
+env/
+venv/
