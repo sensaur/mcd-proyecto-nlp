@@ -18,7 +18,7 @@ Este proyecto se enmarca dentro del curso de Procesamiento de Lenguaje Natural (
 
 ---
 
-## 2. Metodología
+## 2. Datos
 
 ### 2.1 Extracción de datos (Web Scraping)
 
@@ -58,7 +58,8 @@ Transformaciones aplicadas:
 
 Además, se creó una nueva columna `full_description`, que combina: **título + descripción + habilidades + localización**, y se utilizó como texto principal para el modelado.
 
-Se aplicaron dos enfoques principales para la estimación del salario:
+**Nota:**  
+- Los archivos df_offers_raw.pkl, df_offers_clean_sw+acc.pkl y df_offers_clean_sw+acc+lemm.pkl, disponibles en el repositorio de Git, corresponden al dataset en tres etapas distintas del preprocesamiento: sin limpieza, con limpieza (eliminación de stopwords y acentos), y con limpieza más lematización, respectivamente. Estos archivos permiten cargar los datos ya procesados en diferentes apartados del proyecto, evitando la necesidad de ejecutar nuevamente todo el procesamiento previo.
 
 ## 3. Modelos
 
@@ -106,7 +107,15 @@ Para adaptarlos al problema de regresión, se modificó la última capa para pro
 
 ---
 
-## 4. Resultados y conclusiones
+## 4. Optimización Personalizada de Stopwords
+
+Como medida para refinar los resultados se propone un método para la optimización de stopwords, orientado específicamente al contexto de las ofertas laborales.
+El objetivo principal es reducir el ruido léxico presente en el conjunto de datos sin eliminar información potencialmente útil para la tarea predictiva que estamos llevando a cabo. Para ello se combinan dos enfoques complementarios: un filtrado estadístico basado en frecuencia y un filtrado basado en importancia predictiva.
+
+> **Se obtienen mejores resultados que los presentados anteriormente:**  
+> Ridge + BoW (R² ≈ 0.7)  
+
+## 5. Resultados y conclusiones
 
 - Los modelos simples con vectorización BoW o TF-IDF superaron a los métodos más complejos (word embeddings y transformers) en este dataset.
 
@@ -116,9 +125,10 @@ Para adaptarlos al problema de regresión, se modificó la última capa para pro
 
 - La mayoría de las ofertas ya estaban cerradas, lo que sugiere un dataset con fuerte componente histórico.
 
+- Haciendo uso de las stopwords optimizadas, se han obtenido mejores resultados que los presentados anteriormente con los modelos propios.
 ---
 
-## 5. Recomendaciones futuras
+## 6. Recomendaciones futuras
 
 * Aumento del corpus: recopilación y ampliación de datos estructurados a partir de fuentes como Kaggle.
 * Extracción de características: identificación de entidades y palabras clave específicas (tecnologías, skills, experiencia...).
