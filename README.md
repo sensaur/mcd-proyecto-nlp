@@ -60,6 +60,8 @@ Además, se creó una nueva columna `full_description`, que combina: **título +
 
 Se aplicaron dos enfoques principales para la estimación del salario:
 
+## 3. Modelos
+
 #### Modelos propios
 
 Se probaron varias técnicas de vectorización:
@@ -100,7 +102,7 @@ Para adaptarlos al problema de regresión, se modificó la última capa para pro
 
 ---
 
-## 3. Resultados y conclusiones
+## 4. Resultados y conclusiones
 
 - Los modelos simples con vectorización BoW o TF-IDF superaron a los métodos más complejos (word embeddings y transformers) en este dataset.
 
@@ -112,7 +114,7 @@ Para adaptarlos al problema de regresión, se modificó la última capa para pro
 
 ---
 
-## 4. Recomendaciones futuras
+## 5. Recomendaciones futuras
 
 * Aumento del corpus: recopilación y ampliación de datos estructurados a partir de fuentes como Kaggle.
 * Extracción de características: identificación de entidades y palabras clave específicas (tecnologías, skills, experiencia...).
