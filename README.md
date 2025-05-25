@@ -98,6 +98,10 @@ Para adaptarlos al problema de regresión, se modificó la última capa para pro
 > Entrenar estos modelos sobre textos largos generó problemas de memoria.  
 > Se probaron con 100 y 1000 muestras → resultados pobres (R² negativos).
 
+> **Nota:**  
+- Para observar el procesamiento de cada uno de los entrenamientos y conjuntos de predicciones tenemos otro notebook donde se entreno originalmente estos modelos.
+(Modelos Preentrenados ejecución)
+
 ---
 
 ## 3. Resultados y conclusiones
