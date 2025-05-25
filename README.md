@@ -117,3 +117,4 @@ Para adaptarlos al problema de regresión, se modificó la última capa para pro
 * Aumento del corpus: recopilación y ampliación de datos estructurados a partir de fuentes como Kaggle.
 * Extracción de características: identificación de entidades y palabras clave específicas (tecnologías, skills, experiencia...).
 * Modelado: uso de modelos de representación contextual del texto para mejorar la comprensión semántica.
+* Estudio de la evolución y tendencias a lo largo del tiempo, dada la disponibilidad de la variable temporal.
